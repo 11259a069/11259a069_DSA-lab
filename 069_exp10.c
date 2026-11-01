@@ -59,12 +59,12 @@ int main()
 {
     n = 6; /* Subjects 0-5: e.g., 0=C Prog,1=DSA,2=OOPS,3=DBMS,4=OS,5=CN */
 
-    addEdge(0, 1); /* C Programming -> DSA */
-    addEdge(1, 2); /* DSA -> OOPS */
-    addEdge(1, 3); /* DSA -> DBMS */
-    addEdge(2, 4); /* OOPS -> OS */
-    addEdge(3, 4); /* DBMS -> OS */
-    addEdge(4, 5); /* OS -> CN */
+    addEdge(0, 1); 
+    addEdge(1, 2); 
+    addEdge(1, 3); 
+    addEdge(2, 4); 
+    addEdge(3, 4); 
+    addEdge(4, 5); 
 
     BFS(0);
     DFS(0);
