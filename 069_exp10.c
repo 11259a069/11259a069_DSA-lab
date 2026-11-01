@@ -57,7 +57,7 @@ void DFS(int start)
 
 int main()
 {
-    n = 6; /* Subjects 0-5: e.g., 0=C Prog,1=DSA,2=OOPS,3=DBMS,4=OS,5=CN */
+    n = 6;
 
     addEdge(0, 1); 
     addEdge(1, 2); 
