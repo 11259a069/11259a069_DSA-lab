@@ -1,15 +1,14 @@
-
 #include <stdio.h>
 #define MAX 10
 
 int adj[MAX][MAX];
 int visited[MAX];
-int n; /* number of subjects (vertices) */
+int n; 
 
 void addEdge(int u, int v)
 {
     adj[u][v] = 1;
-    adj[v][u] = 1; /* undirected: "related to" */
+    adj[v][u] = 1; 
 }
 
 void BFS(int start)
