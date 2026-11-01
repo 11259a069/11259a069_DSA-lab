@@ -58,13 +58,13 @@ void deleteItem()
 
     int INDEX = findMax();
 
-    /* Extra safety check in case FindMax returns -1 */
+
     if (INDEX == -1)
         return;
 
     int ITEM = PQ[INDEX];
 
-    /* Shift elements left to close the gap */
+    
     for (int i = INDEX; i < REAR; i++)
     {
         PQ[i] = PQ[i + 1];
@@ -72,7 +72,7 @@ void deleteItem()
 
     REAR = REAR - 1; /* As elements are shifted */
 
-    /* Reset queue if it becomes empty */
+    
     if (REAR < FRONT)
     {
         FRONT = -1;
