@@ -7,12 +7,6 @@ void traverse(int arr[], int n)
     printf("\n");
 }
 
-/// @brief Inserts an element at a specified position in the array
-/// @param arr - marks array
-/// @param n - current size of the array
-/// @param pos - position to insert the new element
-/// @param value - the new element to be inserted
-/// @return The new size of the array
 int insert(int arr[], int n, int pos, int value)
 {
     for (int i = n; i > pos; i--)
@@ -21,11 +15,6 @@ int insert(int arr[], int n, int pos, int value)
     return n + 1;
 }
 
-/// @brief  Deletes an element from a specified position in the array
-/// @param arr
-/// @param n
-/// @param pos
-/// @return The new size of the array
 int deleteElement(int arr[], int n, int pos)
 {
     for (int i = pos; i < n - 1; i++)
